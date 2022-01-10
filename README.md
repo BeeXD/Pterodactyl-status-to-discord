@@ -1,4 +1,4 @@
-# petrocyadl-status-to-discord
+# Pterodactyl-status-to-discord
 Posts The server status from pterocyadl panel to discord webhook
 
 # Requirements
