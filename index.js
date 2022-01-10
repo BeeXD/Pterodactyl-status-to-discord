@@ -2,7 +2,7 @@ const { fetch } = require ('@sapphire/fetch');
 const { Webhook } = require('discord-webhook-node');
 var cron = require('node-cron');
 async function getData() {
-    const response = await fetch('https://game.creavite.co/api/client/servers/SERVERID/resources', {
+    const response = await fetch('https://yourWebsite.com/api/client/servers/SERVERID/resources', {
     headers : {
         'Authorization' : 'Bearer TOKEN'
     }
