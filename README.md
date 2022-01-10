@@ -43,6 +43,9 @@ Now The node package manager should install dependencies.
 ### Running the File
 * `node index.js` , Now using the cron module the file will send the stats every 1 minute.
 
+### Screenshots
+![ss](https://cdn.discordapp.com/attachments/916933406636527696/929960718227365948/atlast.PNG)
+
 ### Support
 * Free free to contribute and develop the small project
 * Any errors please make a issue. 
