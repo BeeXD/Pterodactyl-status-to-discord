@@ -1,0 +1,11 @@
+{
+  "name": "asterin-status",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sapphire/fetch": "^2.0.3",
+    "discord-webhook-node": "^1.1.8",
+    "node-cron": "^3.0.0"
+  }
+}
