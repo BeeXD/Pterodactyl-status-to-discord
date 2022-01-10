@@ -1,5 +1,5 @@
 # Pterodactyl-status-to-discord
-Posts The server status from pterocyadl panel to discord webhook
+Posts The server status from Pterodactyl panel to discord webhook
 
 # Requirements
 * Node.js
