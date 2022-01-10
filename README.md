@@ -51,4 +51,4 @@ Now The node package manager should install dependencies.
 * Any errors please make a issue. 
 
 
-Thank You!
+Thank You! <3
