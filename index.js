@@ -17,27 +17,27 @@ async function getData() {
     throwErrors: true
   });
 
-  let embed = new MessageBuilder()
-    .setColor('BLURPLE')
-  if (response.attributes.current_state == "running") {
-    embed.setTitle(`🟢 Server ${process.env.SERVER_ID} 🟢`)
-  } else {
-    embed.setTitle(`🔴 Server ${process.env.SERVER_ID} 🔴`)
-  }
-  embed.addField('CPU Usage:', `${response.attributes.resources.cpu_absolute}%`, true)
-  embed.addField('Memory Usage:', `${formatSizeUnits(response.attributes.resources.memory_bytes)}`, true)
-  embed.addField('Disk Usage:', `${formatSizeUnits(response.attributes.resources.disk_bytes)}`, true)
-  embed.addField('Uptime', `${ms(response.attributes.resources.uptime)}`, true)
-  if (process.env.FOOTER) {
-    embed.setFooter(`${process.env.FOOTER}`)
-  } else {
-    embed.setFooter(`Ptero Status`)
-  }
-
-
   // Cron Task //
   var task = 
     cron.schedule('*/1 * * * *', () => {
+      // Re cache data
+      getData();
+        let embed = new MessageBuilder()
+        .setColor('BLURPLE')
+      if (response.attributes.current_state == "running") {
+        embed.setTitle(`🟢 Server ${process.env.SERVER_ID} 🟢`)
+      } else {
+        embed.setTitle(`🔴 Server ${process.env.SERVER_ID} 🔴`)
+      }
+      embed.addField('CPU Usage:', `${response.attributes.resources.cpu_absolute}%`, true)
+      embed.addField('Memory Usage:', `${formatSizeUnits(response.attributes.resources.memory_bytes)}`, true)
+      embed.addField('Disk Usage:', `${formatSizeUnits(response.attributes.resources.disk_bytes)}`, true)
+      embed.addField('Uptime', `${ms(response.attributes.resources.uptime)}`, true)
+      if (process.env.FOOTER) {
+        embed.setFooter(`${process.env.FOOTER}`)
+      } else {
+        embed.setFooter(`Ptero Status`)
+      }
         hook.send(embed);
       });
     task.start();
