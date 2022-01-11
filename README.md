@@ -52,3 +52,11 @@ PANEL_TOKEN=aetkAaETukhaEG135136aey
 
 
 Thank You! <3
+
+## Contributors
+
+Thanks To contributors
+
+<a href="https://github.com/BeeXD/Pterodactyl-status-to-discord/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=BeeXD/Pterodactyl-status-to-discord" />
+</a>
