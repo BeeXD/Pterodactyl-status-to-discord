@@ -2,10 +2,10 @@
 Posts The server status from Pterodactyl panel to discord webhook
 
 # Requirements
-* [Node.js](https://nodejs.org/en/)
-* [NPM](https://www.npmjs.com/)
+* Node.js
+* npm
 * A Code Editor
-* [Git](https://git-scm.com/)
+* Git
 
 ### Installation
 Clone the repository `git clone https://github.com/BeeXD/pterodactyl-status-to-discord`
@@ -14,7 +14,7 @@ Clone the repository `git clone https://github.com/BeeXD/pterodactyl-status-to-d
 Then write `npm install`
 
 
-Now The Node Package Manager should install dependencies.
+Now The node package manager should install dependencies.
 
 ### Getting a Api Key
 * Go to your Pterodactyl panel.
@@ -52,11 +52,3 @@ PANEL_TOKEN=aetkAaETukhaEG135136aey
 
 
 Thank You! <3
-
-## Contributors
-
-Thanks To contributors
-
-<a href="https://github.com/BeeXD/Pterodactyl-status-to-discord/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=BeeXD/Pterodactyl-status-to-discord" />
-</a>
