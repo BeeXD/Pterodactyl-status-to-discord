@@ -57,6 +57,8 @@ Thank You! <3
 
 Thanks To contributors
 
+A big thanks to [lying](https://lying.pub/) who helped me in this
+
 <a href="https://github.com/BeeXD/Pterodactyl-status-to-discord/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=BeeXD/Pterodactyl-status-to-discord" />
 </a>
