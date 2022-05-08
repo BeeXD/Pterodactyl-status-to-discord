@@ -19,7 +19,7 @@ Now The Node Package Manager should install dependencies.
 ### Getting a Api Key
 * Go to your Pterodactyl panel.
 * Move to your Account settings.
-![Here](https://i.imgur.com/7qnHmbw.png)
+![Here](https://cdn.upload.systems/uploads/5jbfCZYs.png)
 * Write a description then allow your ip or you can leave it blank for global access.
 * Now an Api Key should generate. Keep it private and secure.
 * Go to `.env` and replace the text PANEL_TOKEN with the api key.
