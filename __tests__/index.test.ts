@@ -1,8 +1,18 @@
 import Client from "../src/index"
-
-const client = new Client({domain: 'https://game.creavite.co/', api_key: 'la8zJE9ZFsdVu2GBsbEZMw1bZsxGIEPTYwxRswoKbNUKio5f', server_id: '047afba1'})
+import { envParseString, setup } from "@skyra/env-utilities";
 
 test('Do a basic data fetch', async () => {
+    setup('.env.local');
+    const client = new Client({domain: envParseString('DOMAIN'), api_key: envParseString('API_KEY'), server_id: envParseString('SERVER_ID')});
     const data = await client.getData();
     expect(data).not.toBeNull();
 })
+
+declare module '@skyra/env-utilities' {
+	interface Env {
+		API_KEY: string;
+        DOMAIN: string;
+        SERVER_ID: string;
+        
+	}
+}
