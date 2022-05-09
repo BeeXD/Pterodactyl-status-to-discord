@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+yarn.lock
+.npmignore
+__tests__/.env
