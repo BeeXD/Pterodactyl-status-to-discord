@@ -1,6 +1,7 @@
 # Pterodactyl-status-to-discord
 Posts The server status from Pterodactyl panel to discord webhook
 
+NOTE- If You dont understand this version, you can switch back to old version [HERE](https://github.com/BeeXD/Pterodactyl-status-to-discord/tree/b2da4fef2d482b4107611d2f936b2a51ec704685)
 # Requirements
 * [Node.js](https://nodejs.org/en/)
 * [NPM](https://www.npmjs.com/)
